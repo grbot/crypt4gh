@@ -38,7 +38,7 @@ We use the testfile and Bob encrypts it for himself.
       Expected outcome: Alice reads one "a", 65536 "b"s and one "c".
 
 - [x] Bob sends the secret message `Let's have beers in the sauna! or Dinner at 7pm?` to Alice.
-      The message is burried in the middle of some random data.
+      The message is buried in the middle of some random data.
       Alice decrypts what she receives
       Expected outcome: Alice reads `Let's have beers in the sauna! or Dinner at 7pm?`.
 
@@ -54,3 +54,16 @@ We use the testfile and Bob encrypts it for himself.
 
 - [x] Bob encrypts a 10MB file for Alice, and Alice decrypts it, both using their SSH keypair<br/>
       Expected outcome: Alice reads the same content as testfile.
+
+
+## Multiple recipients
+
+
+- [x] Bob sends the testfile secretly to himself and Alice<br/>
+      Expected outcome: They both can read the same content as Bob had.
+
+- [x] Bob encrypts the testfile for himself and reencrypts it for himself and Alice<br/>
+      Expected outcome: They both can read the same content as Bob had.
+
+
+
